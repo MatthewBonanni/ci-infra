@@ -30,6 +30,7 @@ h200_plugin_template = {
         "VLLM_USAGE_SOURCE=ci-test",
         "NCCL_CUMEM_HOST_ENABLE=0",
         "HF_TOKEN",
+        "HF_HOME",
         "CODECOV_TOKEN",
         "BUILDKITE_ANALYTICS_TOKEN",
     ],
