@@ -65,9 +65,9 @@ def get_agent_queue(step: Step):
     if step.label.startswith(":docker:"):
         if "arm64" in step.label:
             if branch == "main":
-                return AgentQueue.ARM64_CPU_POSTMERGE_US_EAST_1
+                return AgentQueue.ARM64_CPU_POSTMERGE
             else:
-                return AgentQueue.ARM64_CPU_PREMERGE_US_EAST_1
+                return AgentQueue.ARM64_CPU_PREMERGE
         if branch == "main":
             return AgentQueue.CPU_POSTMERGE_US_EAST_1
         else:
